@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\fallingObstacle.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\LoadScene.cs" />
+    <Compile Include="Assets\Scripts\PauseGame.cs" />
     <Compile Include="Assets\Scripts\playerController.cs" />
     <Compile Include="Assets\Scripts\QuitGAME.cs" />
     <Compile Include="Assets\Scripts\spawner.cs" />

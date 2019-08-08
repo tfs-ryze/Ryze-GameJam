@@ -35,7 +35,7 @@ public class playerController : MonoBehaviour {
         if (triggerCollision.tag == "Obstacle")
         {
             Destroy(gameObject);
-            
+            SceneManager.LoadScene("GameOver");
         }
     }
 

@@ -231,7 +231,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1893750256}
+      - m_Target: {fileID: 114911819623020012, guid: 561e3598238d70446885ea6e2dbefd2b,
+          type: 2}
         m_MethodName: GotoNextScene
         m_Mode: 1
         m_Arguments:
@@ -710,12 +711,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1893750256 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114911819623020012, guid: 561e3598238d70446885ea6e2dbefd2b,
-    type: 2}
-  m_PrefabInternal: {fileID: 266510021}
-  m_Script: {fileID: 11500000, guid: 35b2d2a77110c3743a8616804984b2d8, type: 3}
 --- !u!1 &2022544404
 GameObject:
   m_ObjectHideFlags: 0

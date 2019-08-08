@@ -60,6 +60,24 @@ public class GameManager : MonoBehaviour {
         else
             Debug.LogError("Missing Player Prefab or SpawnPoint");
     }
+    
+    public void GotoMainMenu()
+    {
+        if (SceneManager.GetActiveScene().name == "GameOver")
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene("StartMenu");
+        }
+    }
+
+    public void TryAgain()
+    {
+        if (SceneManager.GetActiveScene().name == "GameOver")
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene("Level1");
+        }
+    }
 
     public void GotoNextScene()
     {
@@ -83,5 +101,6 @@ public class GameManager : MonoBehaviour {
             Time.timeScale = 1f;
             SceneManager.LoadScene("Level1");
         }
+
     }
 }
