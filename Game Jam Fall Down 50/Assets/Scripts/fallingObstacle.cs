@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class fallingObstacle : MonoBehaviour {
 
+    // public Vector2 speedMixMax; Speed Increase Variable
     public float Speed = 7;
 	// Use this for initialization
 	void Start () {
-		
+       // Speed = Mathf.Lerp(speedMixMax.x, speedMixMax.y, Difficulty.GetDifficultyPercent()); Increase Speed Gradually
 	}
 	
 	// Update is called once per frame

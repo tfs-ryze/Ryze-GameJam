@@ -6,7 +6,7 @@ public class spawner : MonoBehaviour {
 
     public GameObject fallingObstaclePrefab;
 
-    public float secondsBetweenSpawn = 1;
+    public Vector2 secondsBetweenSpawnsMinMax;
     private float nextSpawnTime;
 
     Vector2 screenHalfSize;
@@ -27,7 +27,9 @@ public class spawner : MonoBehaviour {
 	void Update () {
         if (Time.time > nextSpawnTime)
         {
-            nextSpawnTime = Time.time + secondsBetweenSpawn;
+            float secondsBetweenSpawns = Mathf.Lerp(secondsBetweenSpawnsMinMax.y, secondsBetweenSpawnsMinMax.x, Difficulty.GetDifficultyPercent());
+            nextSpawnTime = Time.time + secondsBetweenSpawns;
+           
 
             float spawnAngle = Random.Range(-spawnAngleMax, spawnAngleMax); //Angle of the spawned items
             float spawnSize = Random.Range(spawnSizeMinMax.x, spawnSizeMinMax.y);
