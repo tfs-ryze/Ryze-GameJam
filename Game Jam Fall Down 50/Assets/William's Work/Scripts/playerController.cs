@@ -29,6 +29,22 @@ public class playerController : MonoBehaviour {
             transform.position = new Vector2(-Screen_HalfWorldUnits, transform.position.y);
         }
 
+        if (Input.touchCount >0)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            if(touch.phase == TouchPhase.Began)
+            {
+                if (transform.position.x < -Screen_HalfWorldUnits)
+                {
+                    transform.position = new Vector2(Screen_HalfWorldUnits, transform.position.y);
+                }
+                if (transform.position.x > Screen_HalfWorldUnits)
+                {
+                    transform.position = new Vector2(-Screen_HalfWorldUnits, transform.position.y);
+                }
+            }
+        }
     }
     void OnTriggerEnter2D(Collider2D triggerCollision)
     {
